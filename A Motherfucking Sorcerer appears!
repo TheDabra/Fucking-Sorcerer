@@ -1,0 +1,60 @@
+puts "A Motherfucking Sorcerer appears!"
+                  
+ puts"                            /'"
+ puts"                           /  '"
+ puts"                          |    |"
+ puts"                        --:'''':--"
+ puts"                          :0_0 :"
+ puts"                          _:"":\_"
+ puts"           ' '      ____.' :::     '._"
+ puts"          . *=====<<=)           \    :"
+ puts"           .  '      '-'-'\_      /'._.'"
+ puts"                            \====:_ """
+ puts"                           .'     \\"
+ puts"                          :       :"
+ puts"                         /   :    ."
+ puts"                        :   .      '."
+ puts"        ,. _            :  : :      :"
+ puts"     '-'    ).          :__:-:__.;--'"
+ puts"   (        '  )        '-'   '-'"
+ 
+ wizard_hp = 5
+ hero_hp = 5
+ 
+ while wizard_hp > 0 && hero_hp > 0
+   puts "Will you attack or defend?"
+   action = gets.chomp
+   action.upcase 
+   
+ 
+ 
+   if action.include?"attack"
+     puts "You have at the Motherfucking Sorcer!"
+     wizard_hp -= 1
+     puts "You deal 1 fucking damage!"
+     puts
+     
+   elsif action.include?"defend"
+     puts "You curl up into a fucking ball and cover your eyes!"
+     hero_hp -= 1
+     puts "You take 1 fucking damage!"
+     puts
+     
+   else 
+     puts "Please fucking type 'attack' or 'defend'"
+   end
+   
+
+ end                   
+            
+ if wizard_hp == 0
+   puts
+   puts
+   puts "You've slain the Motherfucking Sorcerer!"
+   
+ elsif hero_hp == 0
+   puts
+   puts
+   puts " You've been slain by a Motherfucking Sorcerer!"
+ 
+ end  
